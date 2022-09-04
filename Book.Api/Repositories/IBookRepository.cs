@@ -14,7 +14,9 @@ namespace BooksApi.Repositories
 
         Task<Book> Get(int id);
 
-        Task Update();
+        Task<Book> Create(Book book);
+
+        Task Update(Book book);
 
         Task Delete(int id);
 
